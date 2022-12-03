@@ -1,0 +1,185 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #000000;
+    --input-bg-color: #06181C;
+    --button-bg-color:#065E7C;
+
+    --primary-fc: #fff;
+    --second-fc: #7C7C8A;
+
+    --table-bg-color: #092D38;
+    --th-bg-color: #092D38 ;
+    --table-border-color: #4A808C;
+
+    --primary-ff: 'Roboto' , sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+
+    background-color: var(--bg-color);
+
+    color: var(--primary-fc);
+}
+
+body * {
+    font-family: var(--primary-ff);
+}
+
+#app {
+    max-width: 112rem;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 11.5rem 0 8.7rem
+}
+
+.search {
+    display: flex;
+    gap: 0.8rem
+}
+
+.search input { 
+    border: none;
+
+    width: 46.2rem;
+    padding: 1.6rem;
+
+    border-radius: 0.5rem;
+
+    background-color: var(--input-bg-color);
+    color: var(--second-fc);
+}
+
+.search button { 
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    padding: 1.2rem 3.2rem;
+
+    border-radius: 0.5rem;
+
+    background-color: var(--button-bg-color);
+    color: var(--primary-fc);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+main {
+    border: 1px solid var(--table-border-color);
+    border-radius: .8rem;
+
+    margin-bottom: 11.6rem;
+}
+
+table{
+    width: 100%;
+
+    border-spacing: 0;
+}
+
+
+table * {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+thead th {
+    background-color: var(--th-bg-color);
+
+    text-align: left;
+
+    padding: 1.6rem 0;
+}
+
+thead th:first-child{
+    padding-left: 4rem;
+
+    border-radius: .8rem 0 0 0;
+}
+
+thead th:last-child {
+    border-radius: 0 .8rem 0 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    padding: 2.8rem;
+}
+
+.profile a {
+    text-decoration: none;
+    color: var(--primary-fc);
+}
+
+.profile img{
+    width: 5.6rem;
+    height: 5.6rem;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.profile a {
+    color: #E1E1E6;
+}
+
+.btn-remove  button{ 
+    color: #F75A68;
+
+    background: transparent;
+    border: none;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #06161B80;
+}
+
+tbody tr:nth-child(even){
+    background-color: #06181C;
+
+    border: 1px solid var(--table-border-color);
+}
+
+.no-fav {
+    width: 75rem;
+    margin: 21rem auto 28.9rem;
+
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+}
+
+.no-fav span{
+    font-family: 'Roboto Mono' , monospace;
+    color: #4E5455;
+
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
